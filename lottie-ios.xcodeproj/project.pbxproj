@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3793FBBD2ABFB47C58638E6B /* Pods_lottie_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8B0D04F0FB7A773CAEFC1E /* Pods_lottie_ios.framework */; };
 		3A9DF7FD2948145700D484D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DF7FC2948145700D484D1 /* AppDelegate.swift */; };
 		3A9DF7FF2948145700D484D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DF7FE2948145700D484D1 /* SceneDelegate.swift */; };
 		3A9DF8012948145700D484D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DF8002948145700D484D1 /* ViewController.swift */; };
 		3A9DF8042948145700D484D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DF8022948145700D484D1 /* Main.storyboard */; };
 		3A9DF8062948145800D484D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DF8052948145800D484D1 /* Assets.xcassets */; };
 		3A9DF8092948145800D484D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DF8072948145800D484D1 /* LaunchScreen.storyboard */; };
+		3A9DF81229481C8500D484D1 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DF81129481C8500D484D1 /* animation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		3A9DF8052948145800D484D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9DF8082948145800D484D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A9DF80A2948145800D484D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9DF81129481C8500D484D1 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
+		473CF4DBFBA3708C2A1A3221 /* Pods-lottie-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottie-ios.release.xcconfig"; path = "Target Support Files/Pods-lottie-ios/Pods-lottie-ios.release.xcconfig"; sourceTree = "<group>"; };
+		6A8B0D04F0FB7A773CAEFC1E /* Pods_lottie_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lottie_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3417847C96394773CDF7A95 /* Pods-lottie-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottie-ios.debug.xcconfig"; path = "Target Support Files/Pods-lottie-ios/Pods-lottie-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3793FBBD2ABFB47C58638E6B /* Pods_lottie_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05EF1016C47D6DF0E42A3C3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3417847C96394773CDF7A95 /* Pods-lottie-ios.debug.xcconfig */,
+				473CF4DBFBA3708C2A1A3221 /* Pods-lottie-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3A9DF7F02948145700D484D1 = {
 			isa = PBXGroup;
 			children = (
 				3A9DF7FB2948145700D484D1 /* lottie-ios */,
 				3A9DF7FA2948145700D484D1 /* Products */,
+				05EF1016C47D6DF0E42A3C3E /* Pods */,
+				912B60FE148528CCD1422F53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,7 @@
 		3A9DF7FB2948145700D484D1 /* lottie-ios */ = {
 			isa = PBXGroup;
 			children = (
+				3A9DF81029481C5F00D484D1 /* JsonAnimation */,
 				3A9DF7FC2948145700D484D1 /* AppDelegate.swift */,
 				3A9DF7FE2948145700D484D1 /* SceneDelegate.swift */,
 				3A9DF8002948145700D484D1 /* ViewController.swift */,
@@ -67,6 +86,22 @@
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
+		3A9DF81029481C5F00D484D1 /* JsonAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3A9DF81129481C8500D484D1 /* animation.json */,
+			);
+			path = JsonAnimation;
+			sourceTree = "<group>";
+		};
+		912B60FE148528CCD1422F53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A8B0D04F0FB7A773CAEFC1E /* Pods_lottie_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A9DF80D2948145800D484D1 /* Build configuration list for PBXNativeTarget "lottie-ios" */;
 			buildPhases = (
+				FFAD00D55CB95C14FDCCF9DE /* [CP] Check Pods Manifest.lock */,
 				3A9DF7F52948145700D484D1 /* Sources */,
 				3A9DF7F62948145700D484D1 /* Frameworks */,
 				3A9DF7F72948145700D484D1 /* Resources */,
+				15520B69E21ABBA9B75F83CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +163,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A9DF8092948145800D484D1 /* LaunchScreen.storyboard in Resources */,
+				3A9DF81229481C8500D484D1 /* animation.json in Resources */,
 				3A9DF8062948145800D484D1 /* Assets.xcassets in Resources */,
 				3A9DF8042948145700D484D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15520B69E21ABBA9B75F83CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lottie-ios/Pods-lottie-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lottie-ios/Pods-lottie-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lottie-ios/Pods-lottie-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFAD00D55CB95C14FDCCF9DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lottie-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A9DF7F52948145700D484D1 /* Sources */ = {
@@ -282,6 +362,7 @@
 		};
 		3A9DF80E2948145800D484D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3417847C96394773CDF7A95 /* Pods-lottie-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +391,7 @@
 		};
 		3A9DF80F2948145800D484D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473CF4DBFBA3708C2A1A3221 /* Pods-lottie-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
