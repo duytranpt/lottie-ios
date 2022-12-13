@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var animationView: LottieAnimationView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 1.5
+        animationView.contentMode = .scaleAspectFill
+        animationView.play()
     }
 
 
